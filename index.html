@@ -8,15 +8,18 @@
         
 
 
+    
+
+    
     <script type="module">
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
         import define from "https://api.observablehq.com/d/105e60daa3718f19.js?v=3";
         new Runtime().module(define, name => {
-            if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-a5b8dfa3"));
-            if (name === "viewof r") return new Inspector(document.querySelector("#observablehq-viewof-r-a5b8dfa3"));
-            if (name === "viewof ticker") return new Inspector(document.querySelector("#observablehq-viewof-ticker-a5b8dfa3"));
-            if (name === "chart_arc") return new Inspector(document.querySelector("#observablehq-chart_arc-df0abe11"));
-        return ["DATA","Datas","pre_data"].includes(name);
+        if (name === "viewof ticker") return new Inspector(document.querySelector("#observablehq-viewof-ticker-54f37f91"));
+        if (name === "viewof r") return new Inspector(document.querySelector("#observablehq-viewof-r-54f37f91"));
+        if (name === "plot") return new Inspector(document.querySelector("#observablehq-plot-54f37f91"));
+        if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-54f37f91"));
+        return ["DATA","Datas","formatting_data","data1","holders"].includes(name);
         });
     </script>
 
@@ -40,28 +43,23 @@
     <header>
         <h1>Dashboard Índices Gerais Mercado financeiro Consultoria Empresarial</h1>
     </header>
-
-    
-    
-    <div class="container">
+    <div class="grid-container">
         <div class="container-card">
             <h1>Gráfico diário</h1>
             <div class="container-viewof">
-                <div id="observablehq-viewof-r-a5b8dfa3"></div>
-                <div id="observablehq-viewof-ticker-a5b8dfa3"></div>
-    
+                <div id="observablehq-viewof-ticker-54f37f91"></div>
+                <div id="observablehq-viewof-r-54f37f91"></div>
+                
+                <div id="observablehq-plot-54f37f91"></div>
             </div>
-            <div id="observablehq-chart-a5b8dfa3"></div>
-            <p>Credit: <a href="https://observablehq.com/d/105e60daa3718f19">Yahoo Finance Visualization by Nathan Carlos</a></p>
+        </div>
+        
+        <div class="container-card">
+            <h1>Holders</h1>
+            <div id="observablehq-chart-54f37f91"></div>
             
         </div>
-               
     </div>
-    <div class="container-pizza">
-        <h1>Holders</h1>
-        
-    </div>
-    <div id="observablehq-chart_arc-df0abe11"></div>
     
 
 </body>
