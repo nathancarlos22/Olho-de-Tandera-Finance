@@ -1,34 +1,76 @@
-/* h1 {
-    justify-content: center;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root{
+    margin:0;
+    padding:0;
+}
 
-nav {
+body{
+    margin:0;
+    padding:0;
+    background-color: #faf9f9;
+    font-family: "Poppins";
+}
+header{
+    margin:0;
     width: 100%;
-    display: flex;
+    display: block;
     position: fixed;
-    background-color: #F5F5F5;
-
+    top: 0;
 }
-
-#logo {
-    color: #1448b1;
+.navbar .container-main{
+    display: flex;
+    place-content: space-between;
+    background: #6d597a;
+    padding:1.3em;
 }
-
-nav a {
-    color: #000000;
-    margin: auto 20px auto 40px;
+.navbar .logo{
+    float: left;
     text-decoration: none;
     font-weight: bold;
-
+    font-size: 1.2em;
+    color: white;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    margin-right:30px;
+    padding: 0;
+    align-items: baseline;
+}
+ul >li{
+    display: inline;
+    padding: 1.2em;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main .container-main{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+img{
+    max-width:90%;
+    max-height:90%;
+    width: auto;
+    height: auto;
+}
+.main{
+    padding: 5em 4em;
+    text-align: center;
+}
+.sub-header{
+    font-size: 1.3em;
+    color: #e76f51;
 }
 
-nav li {
-    float: left;
-    list-style: none;
-    margin-left: 20px;
 
-}
-
+/*CSS NATHAN
+-
+-
+-
+*/
 .container-card {
     background-color: #fff;
     border-radius: 10px;

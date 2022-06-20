@@ -3,11 +3,7 @@
     <head>
         <meta charset="UTF-8">
             <title>Dashboard</title>
-
         <link rel="stylesheet" type="text/css" href="./css/main.css">
-
-    
-
     <script type="module">
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
         import define from "https://api.observablehq.com/d/105e60daa3718f19.js?v=3";
@@ -26,63 +22,59 @@
     </head>
     
     <body>
-        <main>
-
-            <nav>
-                <a id="logo" a href="#">Olho de Tandera Finance</a>
-        
-                <ul>
-                    <li><a href="dashboard.php">Dashboard</a></li>
-                    <li><a href="contas.php">Contas</a></li>
-                    <li><a href="transacoes.php">Transações</a></li>
-                    <li><a href="categorias.php">Categorias</a></li>
-                    <li><a href="relatorios.php">Relatórios</a></li>
-                    <li><a href="configuracoes.php">Configurações</a></li>
-                    <li><a href="sobre.php">Sobre</a></li>
-                </ul>
-        
-            </nav> 
-            <header>
-                <h1>Dashboard Índices Gerais Mercado financeiro Consultoria Empresarial</h1>
-            </header>
-            <div class="grid-container">
-                <div class="container-card">
-                    <div style="padding: 10px;">
-                        <h1>Gráfico diário</h1> 
-                        <div id="observablehq-viewof-ticker-69062077"></div>
-                        <div id="observablehq-viewof-r-69062077"></div>
-                        <div id="observablehq-plot-69062077"></div>
-                        
-                        
-                    </div>
-                    
-                    
-                </div>
-                
-                <div  class="container-card">
-                    <div style="padding: 10px;"></div>
-                    <h1>Holders</h1>
-                    
-                    <div id="observablehq-chart-69062077"></div>
-                </div>
+        <header class="navbar">
+            <div class="container-main">
+                <div class="logo"><a href="dashboard.php">Olho de Tandera Finance <span></span></a></div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="dashboard.php">Página Inicial</a></li>
+                        <li><a href="#">Comparar Ações</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="container-card" style="margin-top: 10px;">
-                <div style="padding: 10px; ">
-                    <h1>Comparação com vários símbolos</h1>
-                    <div class="grid-container">
-                        <div id="observablehq-plot2-69062077"></div>
-                        <div>
-                            <div id="observablehq-viewof-tickers-69062077"></div>
-                            
+        </header>
+        <section class="main">
+            <div class="container-main">
+                <div class="left-side">
+                    <div class="">
+                        <div class="container-card">
+                            <div style="padding: 10px;">
+                                <h1>Gráfico diário</h1> 
+                                <div id="observablehq-viewof-ticker-69062077"></div>
+                                <div id="observablehq-viewof-r-69062077"></div>
+                                <div id="observablehq-plot-69062077"></div>
+                            </div>
                         </div>
                     </div>
-                    <h2>Dividendos</h2>
-                    <div id="observablehq-plot3-69062077"></div>
+                </div>
+                </div>
+                <div class="right-side">
+                    <div class="">
+                        <div  class="container-card">
+                            <div style="padding: 10px;"></div>
+                            <h1>Holders</h1>
+                            <div id="observablehq-chart-69062077"></div>
+                        </div>
+                    </div>    
                 </div>
             </div>
+        </section>
+
+        <div class="container-card" style="margin-top: 10px;">
+            <div style="padding: 10px; ">
+                <h1>Comparação com vários símbolos</h1>
+                <div class="grid-container">
+                    <div id="observablehq-plot2-69062077"></div>
+                    <div>
+                        <div id="observablehq-viewof-tickers-69062077"></div>
+                        
+                    </div>
+                </div>
+                <h2>Dividendos</h2>
+                <div id="observablehq-plot3-69062077"></div>
+            </div>
         </div>
-        
-        </main>
+    </div>
 
 </body>
 </html>
